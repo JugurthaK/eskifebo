@@ -44,7 +44,7 @@ const app = new Vue({
 				});
 		},
 		loadWeather() {
-			axios.get(`http://api.openweathermap.org/data/2.5/weather?lat=${this.lat}&lon=${this.lon}&units=metric&appid=c23a608c30c207974d6b13223aac2bac&lang=fr`)
+			axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${this.lat}&lon=${this.lon}&units=metric&appid=c23a608c30c207974d6b13223aac2bac&lang=fr`)
 			.then(res => {
 				let weather = res.data;
 				console.log('response',weather);
